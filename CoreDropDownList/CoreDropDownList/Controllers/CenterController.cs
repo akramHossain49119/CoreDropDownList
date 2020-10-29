@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
     public class CenterController : Controller
     {

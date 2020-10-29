@@ -3,16 +3,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
-using DigitalPaymentManagement.ViewModel;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
+using CoreDropDownList.ViewModel;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Reflection.Metadata.Ecma335;
 using System.Net.Sockets;
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
     [AllowAnonymous]
     public class AccountController : Controller

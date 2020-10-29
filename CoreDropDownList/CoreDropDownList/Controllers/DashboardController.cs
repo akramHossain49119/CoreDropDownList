@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
     public class DashboardController : Controller
     {

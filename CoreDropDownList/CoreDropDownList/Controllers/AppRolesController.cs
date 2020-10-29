@@ -12,12 +12,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
-using DigitalPaymentManagement.ViewModel;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
+using CoreDropDownList.ViewModel;
 
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
 
     [Authorize(Policy = "SrAccountantPolicy")]

@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 using System.IO;
-using DigitalPaymentManagement.ViewModel;
+using CoreDropDownList.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore.Internal;
 using System.Security.Claims;
-using DigitalPaymentManagement.SecurityOptions;
+ 
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
     public class ReportController : Controller
     {

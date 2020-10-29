@@ -1,6 +1,6 @@
-﻿using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
-using DigitalPaymentManagement.ViewModel;
+﻿using CoreDropDownList.Data;
+using CoreDropDownList.Models;
+using CoreDropDownList.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -15,7 +15,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
     [Authorize(Policy = "JrAccountantPolicy")]
     public class CollectionController : Controller

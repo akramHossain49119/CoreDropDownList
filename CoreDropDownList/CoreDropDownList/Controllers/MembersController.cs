@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 using System.IO;
-using DigitalPaymentManagement.ViewModel;
+using CoreDropDownList.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore.Internal;
 using System.Security.Claims;
-using DigitalPaymentManagement.SecurityOptions;
+using CoreDropDownList.SecurityOptions;
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
     [Authorize(Policy = "JrAccountantPolicy")]
     public class MembersController : Controller
@@ -274,13 +274,6 @@ namespace DigitalPaymentManagement.Controllers
             return dep;
         }
 
-        private List<Approved> GetApprovedUserName() 
-        {
-            List<Approved> dep = new List<Approved>();
-            dep = (from c in _context.Approveds select c).ToList();
-            dep.Insert(0, new Approved { Id = 0, UserApprovalUser = "--Select Approved Member Name--" });
-            return dep;
-        }
 
         //private List<Member> GetMemberUserName() 
         //{
@@ -941,8 +934,6 @@ namespace DigitalPaymentManagement.Controllers
         [HttpGet]
         public IActionResult IndexApproved()
         {
-            ViewBag.ApprovedUserName = GetApprovedUserName();
-
             return View(_context.Collections.ToList());
         }
 

@@ -10,12 +10,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using DigitalPaymentManagement.Data;
-using DigitalPaymentManagement.Models;
-using DigitalPaymentManagement.ViewModel;
-using DigitalPaymentManagement.SecurityOptions;
+using CoreDropDownList.Data;
+using CoreDropDownList.Models;
+using CoreDropDownList.ViewModel;
+using CoreDropDownList.SecurityOptions;
 
-namespace DigitalPaymentManagement.Controllers
+namespace CoreDropDownList.Controllers
 {
 
     //[AllowAnonymous]
