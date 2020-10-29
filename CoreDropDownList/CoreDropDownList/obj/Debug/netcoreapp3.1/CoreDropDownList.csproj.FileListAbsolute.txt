@@ -387,3 +387,16 @@ D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.
 D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\CoreDropDownList.dll
 D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\CoreDropDownList.pdb
 D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\CoreDropDownList.genruntimeconfig.cache
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\Account\ChangePassword.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\Account\ChangePasswordConfermation.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\Create.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\Delete.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\Details.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\EditRole.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\EditUserInRole.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\ListRoles.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\AppRoles\RoleClaimManage.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+D:\AAGithubDropDownList\CoreDropDownList\CoreDropDownList\obj\Debug\netcoreapp3.1\Razor\Views\LandingPage\Index.cshtml.g.cs

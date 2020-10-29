@@ -1,0 +1,73 @@
+﻿
+@model CoreDropDownList.ViewModel.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="limiter" style="background-image: url(/images/safebox.png); background-position: left;background-repeat: no-repeat;background-size: cover;">
+    <div class="container-login100" style="background-image: url(/Images\safebox.png); background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="wrap-login100">
+            <div class="login100-form-title" style="background-image: url(/images/10.jpg);height:20%;width:100%; background-position: left;background-repeat: no-repeat;background-size: cover;">
+                <span class="login100-form-title-1">
+                    Login to Daily Shop Store Report
+                </span>
+            </div>
+
+            @if (TempData.ContainsKey("error"))
+            {
+                <div class="alert alert-danger alert-dismissible">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Error!</strong> @TempData["error"].ToString()
+                </div>
+            }
+
+        <form method="post" asp-controller="Account" asp-action="Login" style="margin-top:25px;" class="login100-form">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="wrap-input100 validate-input m-b-26">
+                <span class="label-input100 fa fa-envelope">Email</span>
+                <input asp-for="Email" class="input100" type="text" placeholder="Enter email address" value="">
+                <span class="focus-input100"></span>
+                <span asp-validation-for="Email" class="error-text text-danger"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-18">
+                <span class="label-input100">Password</span>
+                <input asp-for="Password" class="input100" type="password" placeholder="Enter password" value="">
+                <span class="focus-input100"></span>
+                <span asp-validation-for="Password" class="error-text text-danger"></span>
+            </div>
+
+            <div class="flex-sb-m w-full p-b-30">
+                <div class="contact100-form-checkbox">
+                    <input asp-for="RememberMe" class="input-checkbox100" type="checkbox">
+                    <label asp-for="RememberMe" class="label-checkbox100">
+                        Remember me
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-login100-form-btn">
+                <div class="col-md-6">
+                    <button class="login100-form-btn" type="submit">
+                        Login
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <a asp-action="Index" asp-controller="LandingPage" class="login100-form-btn">
+                        Back to Main Page
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-0" style="margin-top:5px;">
+                <a class="login100-form-btn" asp-action="ResetPassword" controller="Register">
+                    <i class="glyphicon glyphicon-trash">Reset User Password</i>
+                </a>
+            </div>
+
+        </form>
+        </div>
+    </div>
+</div>

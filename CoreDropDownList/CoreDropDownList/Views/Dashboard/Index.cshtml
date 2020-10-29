@@ -1,0 +1,33 @@
+﻿@inject SignInManager<AppUser> signInManager;
+@inject UserManager<AppUser> userManager;
+
+@using Microsoft.AspNetCore.Identity
+@using CoreDropDownList.Models
+
+@{
+    ViewData["Title"] = "Index";
+    var user = await userManager.GetUserAsync(User);
+    var id = user.Id;
+
+}
+
+<div class="user-title align-center" style="margin-left:200px;">
+    <h3 class="text-center text-uppercase" style="margin-top:60px;background-color:black; color:lightgoldenrodyellow;font-size:x-large; ">
+        Welcome you to our "DPMIS-Digital Payment Management Information System."
+   </h3>
+    <h5 class ="text-center" style="margin-top:10px; background-color:blue; color:lightgoldenrodyellow;font-size:x-large; ">
+
+        @User.Identity.Name !
+        @if (@id != null)
+        {
+            <img src="/Account/RetrieveImageLog/@id" class="rounded-circle" alt="image" height=215 width=225 />
+        }
+    </h5>
+
+</div>
+
+
+<div class="dashboard-wrapper">
+    <img src="~/main/img/dashboard-13.jpg" alt="Dashboard" />
+</div>
+
