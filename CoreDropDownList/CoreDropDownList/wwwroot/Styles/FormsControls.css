@@ -1,0 +1,130 @@
+﻿/*
+*  
+{
+    font-family:"Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;  
+    font-size:10pt;     
+}
+/*---------------------------------*/
+.divItemForm
+{
+    border: 1px solid #C0C0C0;
+    margin: 50px 2px 20px 1%;
+    padding: 20px 2px 10px 10px;    
+    width: 90%;
+    
+}
+.divRow
+{   
+    height:30px;
+    margin-bottom:5px;
+}
+.divColumn
+{
+    width: 49%;
+    height:30px;
+    float: left;
+}
+.divLabel
+{
+    width: 20%;   
+    float: left;
+}
+.divTxtBox
+{
+    width: 78%;
+    float: left;
+}
+.divButton
+{
+    text-align: right;
+    padding-right: 15px;
+}
+.btnSize
+{    
+    width: 20%;
+    height:30px;
+}
+.divGridViewRow
+{       
+    margin-bottom:5px;  
+}
+.gridViewRow
+{
+    font-family: Tahoma;
+    font-size:10pt;     
+}
+.numberValue
+{
+    text-align:right;
+}
+.textbox
+{
+    margin:0px;
+    padding:0px;
+    border:1px solid #ccc;
+}
+
+.addButton
+{    
+    background: url(../images/add.jpg) no-repeat;
+    border: none;
+    cursor:pointer;
+    background-position:top;    
+    background-size:20px 20px;
+    width:30px;
+    padding-left:90px;
+    width:150px;
+}
+.editButton
+{    
+    background: url(../images/edit.jpg) no-repeat;
+    border: none;
+    cursor:pointer;
+    background-position:top;    
+    background-size:20px 20px;
+    width:30px;
+}
+.clearButton
+{    
+    background: url(../images/clear.jpg) no-repeat;
+    border: none;
+    cursor:pointer;
+    background-position:top;    
+    background-size:20px 20px;
+    width:30px;
+    padding-left:90px;
+    width:150px;
+}
+.updateButton
+{    
+    background: url(../images/save.png) no-repeat;
+    border: none;
+    cursor:pointer;
+    background-position:top;    
+    background-size:20px 20px;
+    width:30px;    
+}
+.cancelButton
+{    
+    background: url(../images/cancel.gif) no-repeat;
+    border: none;
+    cursor:pointer;
+    background-position:top;    
+    background-size:20px 20px;
+    width:30px;
+}
+.inserttmp
+{                    
+    border:1px solid #ccc;width:90%;margin:auto;padding:10px;
+    margin-bottom:10px;
+    margin-top:10px;                    
+}
+.inserttmp td
+{
+    border:none;
+}
+.nospace
+{
+    padding : 0px;
+    margin : 0px;   
+}

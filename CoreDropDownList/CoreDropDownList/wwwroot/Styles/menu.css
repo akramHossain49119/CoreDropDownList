@@ -1,0 +1,164 @@
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 25.01.2010
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <div><ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <div><ul><li><a href="#"><span>level 3</span></a></li></ul></div>
+ *                  </li>
+ *              </ul></div>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+
+#menu, #menu * {
+    list-style:none;
+    border:0;
+    padding:0;
+    margin:0;
+}
+#menu {
+    width:200px;
+    position:relative;
+    z-index:999;
+    background:url(../images/menu_top2.jpg) repeat-x;
+    padding-top:25px;
+    color:#000;
+}
+#menu ul {
+    background:none;
+    
+}
+* html #menu, * html #menu ul { /*background-image:url(../images/base.gif); */}
+#menu div {
+    width:200px;
+    position:relative;
+    background:none;
+    padding-top:19px;
+    color:#000;
+}
+#menu ul {padding-top:5px; font-family:Calibri;}
+#menu div ul {
+    background:url(../images/menu_middle.jpg)  ;
+    color:#000;
+    border:1px solid #ccc;
+}
+* html #menu div, * html #menu div ul  
+{
+    padding-top:25px;}
+
+*+html #menu li  
+{
+    background:url(../images/menu_middle3.jpg)  ;
+    border-bottom:1px solid #ccc; 
+    color:#000;}
+
+#menu li div {
+    visibility:hidden;
+    position:absolute;
+    margin:-44px 0 0 0px;
+    left:100%;
+    color:#000;
+}
+* html #menu li div, *+html #menu li div { margin-top:-42px; }
+#menu li:hover>div { visibility:visible; }
+* html #menu li { height:34px; }
+#menu li a 
+{
+    background:url(../images/menu_middle3.jpg)  repeat-x;
+    display:block;
+    font-size:14px;
+    font-family:'Trebuchet MS', Arial, Verdana;
+    color:#000;
+    text-decoration:none;
+    color:#000;
+    padding-top:12px;
+    padding-left: 5px;
+    cursor:pointer;
+    position:relative;
+    z-index:9;
+    
+}
+*+html #menu li a { padding-top:12px; }
+* html #menu li a { padding-top:10px; }
+#menu li.current a,
+#menu li a:hover  
+{
+    
+    color:black;
+    
+    }
+#menu li span {
+    line-height:14px;
+    padding:0 19px 11px 17px;
+    display:block;
+}
+*+html #menu li span { padding-bottom:10px; }
+* html #menu li span {
+    height:24px;
+    padding-bottom:2px;
+}
+#menu li.current a span,
+#menu li a:hover span  
+{
+    background:url(../images/base-select.gif) no-repeat 5px bottom; }
+#menu li a:hover span { color:#fff; }
+#menu li a.parent:hover span { /*background:url(../images/base-select.gif) no-repeat -331px bottom; */}
+#menu.js-active li.current a,
+#menu.js-active li.current a span,
+#menu.js-active li a:hover,
+#menu.js-active li a:hover span { background-image:url(../images/pix.gif); }
+#menu li a.parent span, #menu.js-active li a.parent span { background:url(../images/base-select.gif) no-repeat -499px bottom; }
+#menu li.current li a,
+#menu li.current li a span { background-image:url(../images/pix.gif); }
+#menu li li { border:0; }
+#menu li li a span { color:Black;}
+#menu li li a.parent span, #menu.js-active li li a.parent span { }
+#menu li li a:hover, #menu.js-active li li a:hover { color:Gray; }
+#menu li li a:hover span,
+#menu.js-active li li a:hover span {
+    /*background:url(../images/sub-select.gif) no-repeat 5px bottom;
+    color:#fff;*/
+}
+#menu li li a.parent:hover span, #menu.js-active li li a.parent:hover span { }
+#menu li.back {
+    width:190px;
+    z-index:8;
+    position:absolute;
+    /*background:url(../images/lavalamp.gif) no-repeat 5px bottom;*/
+}
+#menu li.back .left {
+    width:190px;
+    float:none;
+    position:relative;
+    top:0;
+    left:0;
+    height:7px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    visibility:visible;
+    /*background:url(../images/lavalamp.gif) no-repeat -163px 0;*/
+} 
+
+#menu li.last
+{
+    padding-bottom:70px;
+    height:0px;
+    width:200px;
+    border-right:1px solid #ccc;
+    background:url(../images/menu_bottom.jpg) repeat-x;    
+}
+
+#menu li ul
+{
+    box-shadow:3px 3px 3px #000;
+}

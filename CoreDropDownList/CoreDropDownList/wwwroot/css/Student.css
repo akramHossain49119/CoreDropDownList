@@ -1,0 +1,99 @@
+﻿
+    body {
+        background-color:GrayText;
+    }
+
+    table, tr, td, th {
+        vertical-align: top;
+    }
+  
+    textarea {
+        width: auto;
+    }
+
+   input[type="text"] {
+        width: 30px;  
+        border: 1px solid black;
+    }
+    
+   
+    input.STDN {
+        width: 100px;     
+    }
+    input {
+        width: auto;     
+    }
+        
+    select {
+        width: 200px;
+       
+    }
+
+   input.ST {
+            width: 700px;
+        }
+        input.cls {
+            width: 70px;
+        }
+
+        input.STN {
+            width: 700px;
+        }
+        input.STD {
+            width: 700px;
+        }
+        input.STSD {
+            width: 700px;
+        }
+        input.btnSearch {
+            width: 95px;
+            height:50px;
+            background-color:gold;
+            font:50px;
+        }
+
+    th {
+        height: auto;
+        width: 40px;
+        text-align: center;
+        padding-top: 5px;
+        background-color: floralwhite;
+        vertical-align:top;
+    }
+
+    td {
+        height: auto;
+        width: 30px;
+        text-align: center;
+        padding: 5px;
+        background-color: white;
+        color: black;
+
+    }
+
+    
+label {
+  width:200px;
+  display: inline-block;
+}
+
+
+edit {
+  width:200px;
+  display: inline-table;
+}
+
+#txtbox
+    {
+     font-size:18pt;
+     height:40px;
+     width:20px;
+    }
+div input[type="text"] {
+        width: auto;  
+        border: 1px solid black;
+        height:auto;
+    }
+div class{
+    background-color:gold;
+}
